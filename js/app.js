@@ -5,7 +5,7 @@ function validar(){
 
     expresion = /\w+@\w+\.+[a-z]/;
 
-    if(email == "" || clave=="" || clave2==""){
+    if(email == "" || clave=="" || clave2=="" twitter=="" || facebook=="" || google=="" || nombre=="" || apellido=="" || numero=="" || direccion==""){
         alert("Completa todos los campos")
         return false;
     }
