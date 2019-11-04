@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <script src="../js/app.js"></script>
+    <title>REGISTRO</title>
+</head>
+<body>
+    <form action="pagina2.html" d="post" class="form-register" onsubmit="return validar();">
+        <div class="formulario2">
+        <div class="form-register__header">
+            <ul class="progressbar">
+                <li class="progressbar__option active">ACCOUNT SETUP</li>
+                <li class="progressbar__option active">SOCIAL PROFILES</li>
+                <li class="progressbar__option">PERSONAL DETAILS</li>
+            </ul>
+        </div>
+        </div>
+        
+        <form d="post" class="form-register" onsubmit="return validar();">
+        <div class="formulario">
+                <h1>SOCIAL PROFILES</h1>
+                <h4>Your presence on the social network</h4>
+                <div class="contenedor">
+                    <div class="imput-contenedor">
+                        <input type="text" id="twitter" placeholder="Twitter">
+                    </div>
+        
+                    <div class="imput-contenedor">
+                        <input type="text" id="facebook" placeholder="Facebook">
+                    </div>
+             
+                    <div class="imput-contenedor">
+                        <input type="text" id="google"placeholder="Google Plus">
+                    </div>
+        
+                    <input type="submit" value="Previous" class="button" onclick=this.form.action="pagina1.html">
+                    <input type="submit" value="Next" class="button" onclick=this.form.action="pagina3.html">
+                </div>
+        </div>
+        </form>
+        
+
+    </form>
+</body>
+</html>
