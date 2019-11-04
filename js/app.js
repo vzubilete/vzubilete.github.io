@@ -30,11 +30,38 @@ function validar(){
         return false;
     }
 
-    else if(clave != clave2){
-        alert("Las contraseñas no coinciden");
-        return false;
+function validar_clave() {
+        var caract_invalido = " ";
+        var caract_longitud = 40;
+        var cla1 = document.registro.clave.value;
+        var cla2 = document.registro.clave2.value;
+        if (cla1 == '' || cla2 == '') {
+            alert('Debes introducir tu clave en los dos campos.');
+            document.registro
+            return false;
+        }   
+        if (document.registro.clave.value.length < caract_longitud) {
+            alert('Tu clave debe constar de ' + caract_longitud + ' caracteres.');
+            document.registro
+            return false;
+        }
+        if (document.registro.clave.value.indexOf(caract_invalido) > -1) {
+            alert("Las claves no pueden contener espacios");
+            document.registro
+            return false;
+        }
+        else {
+            if (cla1 != cla2) {
+                alert ("Las claves introducidas no son iguales");
+                document.registro
+                return false;
+            }
+            else {
+                alert('Contraeña correcta');
+                document.registro.submit;
+                return true;
+            }
+        }
     }
 
 
-
-}
