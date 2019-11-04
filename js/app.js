@@ -32,8 +32,7 @@ function validar(){
 
     else if(clave != clave2){
         alert("Las contraseñas no coinciden");
-        clave.value = "";
-        clave2.value = "";
+        return false;
     }
 
 
